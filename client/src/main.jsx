@@ -1,3 +1,4 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {
@@ -18,6 +19,7 @@ import SignUp from './routes/SignUp';
 import {store, persistor} from './redux/store'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
+
 
 const router = createBrowserRouter([
   {
