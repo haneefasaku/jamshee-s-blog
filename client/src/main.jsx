@@ -15,6 +15,8 @@ import Dashbord from './routes/Dashbord';
 import Projects from './routes/Projects';
 import SignIn from './routes/SignIn';
 import SignUp from './routes/SignUp';
+import store from './redux/store'
+import { Provider } from 'react-redux'
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Provider store={store}>
     <RouterProvider router={router} />
+    </Provider>
   </StrictMode>,
 )
